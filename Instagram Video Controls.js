@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Instagram Video Controls
-// @version      1.2
+// @version      1.3
 // @description  Adds video player controls to Instagram videos and keyboard shortcuts for fullscreen (press 'f') and mute (press 'm')
 // @author       FXZFun \ BlindWanda
 // @match        https://www.instagram.com/
@@ -24,14 +24,20 @@
                 GM_addStyle(`
                     ::-webkit-media-controls {
                         z-index: 999999;
-                        position: relative;
+                        position: relative; /* Ensure the controls can be repositioned */
+                        bottom: 25px; /* Move controls 50px up from the bottom */
                     }
                     video::-webkit-media-controls {
                         opacity: 0;
-                        transition: opacity 1.0s ease-in-out;
+                        transition: opacity 2.5s ease-in-out;
                     }
                     video:hover::-webkit-media-controls {
                         opacity: 1;
+                    }
+                    /* Remove the fade/gradient bar around the controls */
+                    video::-webkit-media-controls-panel {
+                        background: transparent; /* Remove the gradient background */
+                        -webkit-box-shadow: none; /* Remove any shadow effects */
                     }
                 `);
             }
