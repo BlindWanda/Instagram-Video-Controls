@@ -25,7 +25,7 @@
                     ::-webkit-media-controls {
                         z-index: 999999;
                         position: relative; /* Ensure the controls can be repositioned */
-                        bottom: 25px; /* Move controls 50px up from the bottom */
+                        bottom: 35px; /* Move controls 50px up from the bottom */
                     }
                     video::-webkit-media-controls {
                         opacity: 0;
