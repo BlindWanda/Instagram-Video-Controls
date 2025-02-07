@@ -2,7 +2,7 @@
 // @name         Instagram Video Controls
 // @version      1.1
 // @description  Adds video player controls to Instagram videos and keyboard shortcuts for fullscreen (press 'f') and mute (press 'm')
-// @author       FXZFun
+// @author       FXZFun\BlindWanda
 // @match        https://www.instagram.com/
 // @match        https://www.instagram.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=instagram.com
@@ -95,6 +95,7 @@
     }
 })();
 
+// BELOW IS CODE TO AUTOMATICALLY UNMUTE INSTAGRAM VIDEOS --BLINDWANDA
 (function() {
     'use strict';
 
