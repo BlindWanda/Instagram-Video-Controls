@@ -6,8 +6,8 @@
 // @match        https://www.instagram.com/
 // @match        https://www.instagram.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=instagram.com
-// @updateURL    https://github.com/BlindWanda/Instagram-Video-Controls/blob/main/Instagram%20Video%20Controls.js
-// @downloadURL  https://github.com/BlindWanda/Instagram-Video-Controls/blob/main/Instagram%20Video%20Controls.js
+// @updateURL    https://raw.githubusercontent.com/BlindWanda/Instagram-Video-Controls/refs/heads/main/Instagram%20Video%20Controls.js
+// @downloadURL  https://raw.githubusercontent.com/BlindWanda/Instagram-Video-Controls/refs/heads/main/Instagram%20Video%20Controls.js
 // @grant        GM_addStyle
 // @license      GNU GPL v3
 // ==/UserScript==
