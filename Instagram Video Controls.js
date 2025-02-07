@@ -1,16 +1,14 @@
 // ==UserScript==
-// @name         Instagram Video Controls (Version 1.3f)
-// @version      1.3f
+// @name         Instagram Video Controls
+// @version      1.1
 // @description  Adds video player controls to Instagram videos and keyboard shortcuts for fullscreen (press 'f') and mute (press 'm')
-// @author       FXZFun \ BlindWanda
-// @match        *://www.instagram.com/*
-// @include      *://www.instagram.com/*
-// @license      GNU GPL v3
-// @grant        none
+// @author       FXZFun
+// @match        https://www.instagram.com/
+// @match        https://www.instagram.com/*
 // @run-at       document-start
 // @icon         https://raw.githubusercontent.com/BlindWanda/Instagram-Video-Controls/refs/heads/main/instagram.png
-// @updateURL    https://raw.githubusercontent.com/BlindWanda/Instagram-Video-Controls/refs/heads/main/Instagram%20Video%20Controls.js
-// @downloadURL  https://raw.githubusercontent.com/BlindWanda/Instagram-Video-Controls/refs/heads/main/Instagram%20Video%20Controls.js
+// @grant        GM_addStyle
+// @license      GNU GPL v3
 // ==/UserScript==
 
 (function() {
@@ -25,20 +23,14 @@
                 GM_addStyle(`
                     ::-webkit-media-controls {
                         z-index: 999999;
-                        position: relative; /* Ensure the controls can be repositioned */
-                        bottom: 35px; /* Move controls 50px up from the bottom */
+                        position: relative;
                     }
                     video::-webkit-media-controls {
-                        opacity: 1;
-                        transition: opacity 2.5s ease-in-out;
+                        opacity: 0;
+                        transition: opacity 0.3s ease-in-out;
                     }
                     video:hover::-webkit-media-controls {
                         opacity: 1;
-                    }
-                    /* Remove the fade/gradient bar around the controls */
-                    video::-webkit-media-controls-panel {
-                        background: transparent; /* Remove the gradient background */
-                        -webkit-box-shadow: none; /* Remove any shadow effects */
                     }
                 `);
             }
@@ -102,7 +94,6 @@
     }
 })();
 
-// BELOW IS CODE TO AUTOMATICALLY UNMUTE INSTAGRAM VIDEOS --BLINDWANDA
 (function() {
     'use strict';
 
