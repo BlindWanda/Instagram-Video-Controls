@@ -9,8 +9,8 @@
 // @grant        none
 // @run-at       document-start
 // @icon         https://raw.githubusercontent.com/BlindWanda/Instagram-Video-Controls/refs/heads/main/instagram.png
-// @updateURL    "https://github.com/BlindWanda/Instagram-Video-Controls/raw/refs/heads/main/Instagram Video Controls.js"
-// @downloadURL  "https://github.com/BlindWanda/Instagram-Video-Controls/raw/refs/heads/main/Instagram Video Controls.js"
+// @updateURL    https://raw.githubusercontent.com/BlindWanda/Instagram-Video-Controls/refs/heads/main/Instagram%20Video%20Controls.js
+// @downloadURL  https://raw.githubusercontent.com/BlindWanda/Instagram-Video-Controls/refs/heads/main/Instagram%20Video%20Controls.js
 // ==/UserScript==
 
 (function() {
