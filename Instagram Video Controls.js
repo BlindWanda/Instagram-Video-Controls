@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Instagram Video Controls (Version 1.3)
-// @version      1.3
+// @version      1.3a
 // @description  Adds video player controls to Instagram videos and keyboard shortcuts for fullscreen (press 'f') and mute (press 'm')
 // @author       FXZFun \ BlindWanda
 // @match        https://www.instagram.com/
